@@ -1,5 +1,3 @@
-/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
-
 :root {
 
   /*
@@ -17,22 +15,24 @@
    * Typography
    * ======================================================================== */
 
-  --font-family-base:      'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+  --font-family-base:      'HelveticaNeue-Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
   /*
    * Layout
    * ======================================================================== */
 
-  --max-content-width:     1000px;
+  --max-content-width:     1200px;
 
   /*
    * Media queries breakpoints
    * ======================================================================== */
 
-  --screen-xs-min:         480px;  /* Extra small screen / phone */
-  --screen-sm-min:         768px;  /* Small screen / tablet */
-  --screen-md-min:         992px;  /* Medium screen / desktop */
-  --screen-lg-min:         1200px; /* Large screen / wide desktop */
+
+  --screen-xs-min:         400px;  /* Extra small screen / phone */
+  --screen-sm-min:         550px;  /* Small screen / tablet */
+  --screen-md-min:         750px;  /* Medium screen / desktop */
+  --screen-lg-min:         1000px; /* Large screen / wide desktop */
+  --screen-xl-min:         1200px; /* Large screen HD / wide desktop HD */
 
   /*
    * Animations
