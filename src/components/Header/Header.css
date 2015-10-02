@@ -1,52 +1,16 @@
-/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
-
 @import '../variables.css';
 
-:root {
-  --brand-color: #61dafb;
+.Hero {
+  background-image: url(/img/oj-header-full.jpg);
+  background-size: cover;
+  height: 800px;
 }
 
-.Header {
-  background: #373277;
-  color: #fff;
-}
-
-.Header-container {
-  margin: 0 auto;
-  padding: 20px 0;
-  max-width: var(--max-content-width);
-}
-
-.Header-brand {
-  color: color(var(--brand-color) lightness(+10%));
-  text-decoration: none;
-  font-size: 1.75em; /* ~28px */
-}
-
-.Header-brandTxt {
-  margin-left: 10px;
-}
-
-.Header-nav {
-  float: right;
-  margin-top: 6px;
-}
-
-.Header-banner {
-  text-align: center;
-}
-
-.Header-bannerTitle {
-  margin: 0;
-  padding: 10px;
-  font-weight: normal;
-  font-size: 4em;
-  line-height: 1em;
-}
-
-.Header-bannerDesc {
-  padding: 0;
-  color: rgba(255, 255, 255, .5);
-  font-size: 1.25em;
-  margin: 0;
+.Hero--overlay {
+  position: absolute;
+  height: 800px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(51, 11, 34) 0%, rgb(64, 18, 33) 66%, rgb(43, 13, 18) 100%);
+  opacity: 0.8;
+  pointer-events: none;
 }
