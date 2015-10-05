@@ -4,11 +4,13 @@
    * ======================================================================== */
 
   --white-base: #ffffff;
+  --oj-yellow: #c08f60;
 
   /*
    * Typography
    * ======================================================================== */
 
+  --typography-light: #ffffff;
   --font-family-base: 'Avenir Next', 'HelveticaNeue-Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 
   /*

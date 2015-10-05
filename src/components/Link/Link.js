@@ -21,8 +21,8 @@ class Link extends Component {
   };
 
   static handleClick = event => {
-    var allowTransition = true;
-    var clickResult;
+    let allowTransition = true;
+    let clickResult;
 
     if (this.props && this.props.onClick) {
       clickResult = this.props.onClick(event);

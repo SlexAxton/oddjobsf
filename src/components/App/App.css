@@ -2,41 +2,12 @@
 @import '../../../node_modules/skeleton-css/css/skeleton.css';
 @import '../variables.css';
 
-/*
- * Base styles
- * ========================================================================== */
-
-html, body {
-  font-size: 1em; /* ~16px; */
+html,
+body {
+  font-size: 1em;
   font-family: var(--font-family-base);
-  line-height: 1.375; /* ~22px */
+  line-height: 1.375;
 }
-
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-/*
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-*/
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
 
 audio,
 canvas,
@@ -46,10 +17,6 @@ svg,
 video {
   vertical-align: middle;
 }
-
-/*
- * Remove default fieldset styles.
- */
 
 fieldset {
   border: 0;

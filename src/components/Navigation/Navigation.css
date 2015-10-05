@@ -1,0 +1,34 @@
+@import '../variables.css';
+
+:root {
+  --nav-link-color: var(--typography-light);
+
+  --logo-height: 74px;
+  --logo-width: 166.5px;
+}
+
+.Navigation {
+  color: var(--nav-link-color);
+}
+
+.Navigation :any-link {
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+.Navigation :any-link:hover {
+  text-decoration: underline;
+}
+
+.Navigation-logo {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(/img/oj-logo.svg);
+  background-repeat: none;
+  /* orig is 126 * 56 */
+  background-size: var(--logo-width) var(--logo-height);
+  height: var(--logo-height);
+  width: var(--logo-width);
+}

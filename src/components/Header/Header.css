@@ -1,16 +1,30 @@
 @import '../variables.css';
 
+:root {
+  --hero-height: 675px;
+  --hero-top-border-color: #c08f60;
+}
+
 .Hero {
   background-image: url(/img/oj-header-full.jpg);
   background-size: cover;
-  height: 800px;
+  background-position: center center;
+  height: var(--hero-height);
 }
 
-.Hero--overlay {
+.Hero-content {
   position: absolute;
-  height: 800px;
+  height: var(--hero-height);
+  width: 100%;
+  z-index: 1;
+}
+
+.Hero-overlay {
+  position: absolute;
+  height: var(--hero-height);
   width: 100%;
   background: linear-gradient(to bottom, rgb(51, 11, 34) 0%, rgb(64, 18, 33) 66%, rgb(43, 13, 18) 100%);
   opacity: 0.8;
   pointer-events: none;
+  z-index: 0;
 }
