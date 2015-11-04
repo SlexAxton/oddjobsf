@@ -10,13 +10,15 @@
   background-size: cover;
   background-position: center center;
   height: var(--hero-height);
+  border-top: 2px solid var(--oj-yellow);
 }
 
 .Hero-content {
   position: absolute;
   height: var(--hero-height);
-  width: 100%;
+  width: 86%;
   z-index: 1;
+  padding: 64px 7%;
 }
 
 .Hero-overlay {
