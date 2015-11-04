@@ -1,7 +1,7 @@
 @import '../variables.css';
 
 :root {
-  --hero-height: 675px;
+  --hero-height: 920px;
   --hero-top-border-color: #c08f60;
 }
 
@@ -15,10 +15,20 @@
 
 .Hero-content {
   position: absolute;
-  height: var(--hero-height);
+  height: calc(var(--hero-height) - 128px);
   width: 86%;
   z-index: 1;
   padding: 64px 7%;
+  text-align: center;
+}
+
+.Hero-centerLogo {
+  background-image: url(/img/oj.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px;
+  height: 300px;
+  margin-top: 135px;
 }
 
 .Hero-overlay {
@@ -29,4 +39,34 @@
   opacity: 0.8;
   pointer-events: none;
   z-index: 0;
+}
+
+.Hero-description {
+  text-align: center;
+  font-size: 42px;
+  opacity: 0.8;
+  color: #ffffff;
+  font-weight: 200;
+  padding: 20px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.Hero-actionLink {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--oj-yellow);
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 30px;
+  padding: 15px 80px;
+  border: 1px solid var(--oj-yellow);
+}
+
+.Hero-actionLink:hover {
+  color: var(--oj-yellow);
+  opacity: 1;
+  background-color: rgba(255,255,255,0.1);
 }
