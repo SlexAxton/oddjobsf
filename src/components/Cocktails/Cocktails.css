@@ -1,0 +1,19 @@
+@import '../variables.css';
+
+:root {
+}
+
+/* Example markup
+  <div class="Cocktails-listContainer">
+    <ul class="Cocktails-list">
+      <li class="Cocktails-listItem">
+        <div class="Cocktails-imageContainer" data-cocktail="">
+
+          <span class="Cocktails-name">Cocktail Name</span>
+          <span class="Cocktails-ingredients">A dash of this, some of that, some extra stuff, with lime</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+*/
+

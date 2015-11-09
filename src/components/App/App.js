@@ -3,6 +3,7 @@ import styles from './App.css';
 import withContext from '../../decorators/withContext';
 import withStyles from '../../decorators/withStyles';
 import Header from '../Header';
+import Cocktails from '../Cocktails';
 import Footer from '../Footer';
 
 @withContext
@@ -18,6 +19,7 @@ class App extends Component {
     return !this.props.error ? (
       <div className="oddjob-yo">
         <Header />
+        <Cocktails />
         {this.props.children}
         <Footer />
       </div>
