@@ -8,16 +8,33 @@ import { featuredCocktails } from '../../config';
 @withStyles(styles)
 class Cocktails extends Component {
 
+  imageStyle(cocktail) {
+    return `url(/img/${cocktail.imageSrc})`;
+  }
+
   render() {
-    return (
-      <div class="Cocktails-listContainer">
-        <ul class="Cocktails-list">
-          <li class="Cocktails-listItem">
-            <div class="Cocktails-imageContainer" data-cocktail-id={featuredCocktails[0].id}>
-              <span class="Cocktails-name">{featuredCocktails[0].name}</span>
-              <span class="Cocktails-ingredients">{featuredCocktails[0].description}</span>
+    const largeIdxs = [0,1,2,3];
+    const cocktails = featuredCocktails.map((cocktail, idx) => {
+      let itemClassName = 'Cocktail-listItem';
+      if (largeIdxs.indexOf(idx) >= 0) {
+        itemClassName += ' Cocktail-listItem--large';
+      }
+      return (
+        <li className={itemClassName}>
+          <div className="Cocktail-imageContainer" style={{backgroundImage: this.imageStyle(cocktail)}}>
+            <div className="Cocktail-text">
+              <span className="Cocktail-name">{cocktail.name}</span>
+              <span className="Cocktail-ingredients">{cocktail.description}</span>
             </div>
-          </li>
+          </div>
+        </li>
+      );
+    });
+
+    return (
+      <div className="Cocktail-listContainer">
+        <ul className="Cocktail-list">
+          {cocktails}
         </ul>
       </div>
     );

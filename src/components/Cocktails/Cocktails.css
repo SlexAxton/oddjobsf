@@ -1,19 +1,63 @@
 @import '../variables.css';
 
 :root {
+  --cocktail-name-color: #ffffff;
+  --cocktail-description-color: #ffffff;
 }
 
 /* Example markup
-  <div class="Cocktails-listContainer">
-    <ul class="Cocktails-list">
-      <li class="Cocktails-listItem">
-        <div class="Cocktails-imageContainer" data-cocktail="">
+  <div class="Cocktail-listContainer">
+    <ul class="Cocktail-list">
+      <li class="Cocktail-listItem">
+        <div class="Cocktail-imageContainer" style="background-image:url(asdf.jpg)">
 
-          <span class="Cocktails-name">Cocktail Name</span>
-          <span class="Cocktails-ingredients">A dash of this, some of that, some extra stuff, with lime</span>
+          <span class="Cocktail-name">Cocktail Name</span>
+          <span class="Cocktail-ingredients">A dash of this, some of that, some extra stuff, with lime</span>
         </div>
       </li>
     </ul>
   </div>
 */
 
+.Cocktail-list {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+.Cocktail-listItem {
+  display: inline-block;
+  float: left;
+  width: 33.33333%;
+  margin-bottom: 0;
+}
+
+.Cocktail-listItem--large {
+  width: 50%;
+}
+
+.Cocktail-imageContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Cocktail-text {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+
+.Cocktail-name {
+  color: var(--cocktail-name-color);
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+}
+
+.Cocktail-ingredients {
+  color: var(--cocktail-description-color);
+}
