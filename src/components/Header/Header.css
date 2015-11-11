@@ -6,7 +6,7 @@
 }
 
 .Hero {
-  background-image: url(/img/oj-header-full-2.jpg);
+  background-image: url(/img/oj-header-full-3.jpg);
   background-size: cover;
   background-position: center center;
   height: var(--hero-height);
@@ -16,14 +16,14 @@
 .Hero-content {
   position: absolute;
   height: calc(var(--hero-height) - 128px);
-  width: 86%;
+  width: 100%;
   z-index: 1;
   padding: 64px 7%;
   text-align: center;
 }
 
 .Hero-centerLogo {
-  background-image: url(/img/oj.svg);
+  background-image: url(/img/oj2.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 250px;

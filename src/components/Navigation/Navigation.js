@@ -17,9 +17,9 @@ class Navigation extends Component {
         <a className="Navigation-logo" href="/" onClick={Link.handleClick}>Oddjob</a>
 
         <ul className="Navigation-linkGroup">
-          <li><a className="Navigation-link" href="/cocktails" onClick={Link.handleClick}>Cocktails</a></li>
-          <li><a className="Navigation-link" href="/events" onClick={Link.handleClick}>Events</a></li>
-          <li><a className="Navigation-link" href="/contact" onClick={Link.handleClick}>Contact</a></li>
+          <li><a className="Navigation-link" href="#cocktails">Cocktails</a></li>
+          <li><a className="Navigation-link" href="#events">Events</a></li>
+          <li><a className="Navigation-link" href="#contact">Contact</a></li>
         </ul>
 
         <div className="Navigation-infoGroup">

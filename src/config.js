@@ -6,6 +6,7 @@ export default {
       name: "Stolen Roses",
       imageSrc: "cocktails/stolenroses.jpg",
       description: "Four Roses Bourbon, Alessio Vermouth Chinato, Epaulette pepper, Valencia orange & Lemon",
+      offsetPercentageY: 32,
     },
     {
       id: "funnygame",
@@ -36,12 +37,14 @@ export default {
       name: "Name Is Gina, But They Call Me Gypsy",
       imageSrc: "cocktails/mynameisgina.jpg",
       description: "Small batch rye, yerba mate, vanilla bean Liqueur, Bitter queens citrus & frankincense bitters",
+      offsetPercentageY: 42,
     },
     {
       id: "smithsgrove",
       name: "Smiths Grove",
       imageSrc: "cocktails/smithsgrove.jpg",
       description: "London dry gin, Torino vermouth, all spice dram, Turbinado, egg white, thyme, lemon",
+      offsetPercentageY: 58,
     },
     {
       id: "eyeballkid",
