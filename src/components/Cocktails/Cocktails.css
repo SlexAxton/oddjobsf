@@ -40,6 +40,7 @@
   width: 25%;
   padding: 8px;
   margin-bottom: 0;
+  overflow: hidden;
 }
 
 .Cocktail-listItem--large {
@@ -111,4 +112,8 @@
   letter-spacing: 1px;
   height: 40px;
   opacity: 0.8;
+}
+
+.Cocktail-listItem--large .Cocktail-ingredients {
+  width: 80%;
 }

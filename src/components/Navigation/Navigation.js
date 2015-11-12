@@ -24,7 +24,7 @@ class Navigation extends Component {
 
         <div className="Navigation-infoGroup">
           <a className="Navigation-address" href="https://goo.gl/maps/U2A6AH3YpKx">1337 Mission St, San Francisco, CA</a>
-          <span className="Navigation-phoneNumber">650-787-2432</span>
+          <span className="Navigation-openNotice"><strong>Open Now</strong> until 2am</span>
         </div>
       </div>
     );
