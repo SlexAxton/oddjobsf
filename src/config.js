@@ -1,5 +1,8 @@
+let menus = require('./menus.js');
+
 export default {
   googleAnalyticsId: 'UA-XXXXX-X',
+  menus: menus,
   featuredCocktails: [
     {
       id: "stolenroses",
