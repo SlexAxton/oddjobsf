@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styles from './Cocktails.css';
 import withStyles from '../../decorators/withStyles';
-// import Link from '../Link';
+import slug from 'slug';
 
 import { featuredCocktails } from '../../config';
 
@@ -15,15 +15,16 @@ class Cocktails extends Component {
   render() {
     const largeIdxs = [0,1,2,7,8,9];
     const cocktails = featuredCocktails.map((cocktail, idx) => {
-      let itemClassName = 'Cocktail-listItem';
+      const itemClassNames = ['Cocktail-listItem'];
       if (largeIdxs.indexOf(idx) >= 0) {
-        itemClassName += ' Cocktail-listItem--large';
+        itemClassNames.push('Cocktail-listItem--large');
       }
+      const itemClassName = itemClassNames.join(' ');
 
-      let offsetPercentageY = cocktail.offsetPercentageY ? `${cocktail.offsetPercentageY}%` : '50%';
+      const offsetPercentageY = cocktail.offsetPercentageY ? `${cocktail.offsetPercentageY}%` : '50%';
 
       return (
-        <li className={itemClassName}>
+        <li key={slug(cocktail.name)} className={itemClassName}>
           <div className="Cocktail-imageContainer" style={{backgroundImage: this.imageStyle(cocktail), backgroundPositionY: offsetPercentageY}}>
             <div className="Cocktail-text">
               <span className="Cocktail-name">{cocktail.name}</span>

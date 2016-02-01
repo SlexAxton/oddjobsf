@@ -19,8 +19,10 @@
     "normalize.css": "3.0.3",
     "react": "0.14.0-rc1",
     "react-dom": "0.14.0-rc1",
+    "react-image-gallery": "^0.5.7",
     "react-routing": "0.0.4",
     "skeleton-css": "^2.0.4",
+    "slug": "^0.9.1",
     "source-map-support": "0.3.2",
     "superagent": "1.4.0"
   },
