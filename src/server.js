@@ -15,7 +15,7 @@ import ReactDOM from 'react-dom/server';
 import Router from './routes';
 import Html from './components/Html';
 import assets from './assets';
-import { port } from './config';
+import { port, title, description, canonicalUrl } from './config';
 
 const server = global.server = express();
 
@@ -35,7 +35,7 @@ server.use('/api/content', require('./api/content').default);
 server.get('*', async (req, res, next) => {
   try {
     let statusCode = 200;
-    const data = { title: '', description: '', css: '', body: '', entry: assets.main.js };
+    const data = { title: title, description: description, canonicalUrl: canonicalUrl, css: '', body: '', entry: assets.main.js };
     const css = [];
     const context = {
       insertCss: styles => css.push(styles._getCss()),
@@ -50,7 +50,7 @@ server.get('*', async (req, res, next) => {
     });
 
     const html = ReactDOM.renderToStaticMarkup(<Html {...data} />);
-    res.status(statusCode).send(`<!doctype html>\n${html}`);
+    res.status(statusCode).send(`<!dOCtYpe HtMl>\n${html}`);
   } catch (err) {
     next(err);
   }
