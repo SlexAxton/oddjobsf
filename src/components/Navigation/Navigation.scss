@@ -1,45 +1,70 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
+@import '../variables.scss';
+
+$nav-link-color: $typography-light;
+$logo-height: 74px;
+$logo-width: 166.5px;
 
 .root {
+  color: $nav-link-color;
+}
 
+.root a {
+  color: $nav-link-color;
+  text-decoration: none;
+}
+
+.root a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url(/img/oj-logo.svg);
+  background-repeat: none;
+  /* orig is 126 * 56 */
+  background-size: $logo-width $logo-height;
+  height: $logo-height;
+  width: $logo-width;
+  float: left;
+  opacity: 0.9;
+}
+
+.linkGroup {
+  list-style-type: none;
+  margin: 0 0 0 60px;
+  float: left;
+}
+
+.linkGroup li {
+  display: inline-block;
+  margin-right: 50px;
 }
 
 .link {
-  display: inline-block;
-  padding: 3px 8px;
-  text-decoration: none;
-  font-size: 1.125em; /* ~18px */
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-weight: 400;
+  letter-spacing: 1.5px;
 }
 
-.link,
-.link:active,
-.link:visited {
-  color: rgba(255, 255, 255, .6);
+.infoGroup {
+  float: right;
+  opacity: 0.8;
+  line-height: 48px;
+  height: 48px;
+  letter-spacing: 1px;
 }
 
-.link:hover {
-  color: rgba(255, 255, 255, 1);
+.address {
 }
 
-.highlight {
-  margin-right: 8px;
-  margin-left: 8px;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, .15);
-  color: #fff;
-}
-
-.highlight:hover {
-  background: rgba(0, 0, 0, .3);
-}
-
-.spacer {
-  color: rgba(255, 255, 255, .3);
+.openNotice {
+  padding-left: 40px;
 }

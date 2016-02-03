@@ -1,57 +1,70 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 @import '../variables.scss';
 
-$brand-color: #61dafb;
+$hero-height: 920px;
+$hero-top-border-color: #c08f60;
 
 .root {
-  background: #373277;
-  color: #fff;
+  background-image: url(/img/oj-header-full-3.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: $hero-height;
+  border-top: 2px solid $oj-yellow;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 20px 0;
-  max-width: $max-content-width;
-}
-
-.brand {
-  color: color($brand-color lightness(+10%));
-  text-decoration: none;
-  font-size: 1.75em; /* ~28px */
-}
-
-.brandTxt {
-  margin-left: 10px;
-}
-
-.nav {
-  float: right;
-  margin-top: 6px;
-}
-
-.banner {
+.content {
+  position: absolute;
+  height: calc($hero-height - 128px);
+  width: 100%;
+  z-index: 1;
+  padding: 64px 7%;
   text-align: center;
 }
 
-.bannerTitle {
-  margin: 0;
-  padding: 10px;
-  font-weight: normal;
-  font-size: 4em;
-  line-height: 1em;
+.centerLogo {
+  background-image: url(/img/oj2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 250px;
+  height: 300px;
+  margin-top: 135px;
 }
 
-.bannerDesc {
-  padding: 0;
-  color: rgba(255, 255, 255, .5);
-  font-size: 1.25em;
-  margin: 0;
+.overlay {
+  position: absolute;
+  height: $hero-height;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(51, 11, 34) 0%, rgb(64, 18, 33) 66%, rgb(43, 13, 18) 100%);
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.description {
+  text-align: center;
+  font-size: 42px;
+  opacity: 0.8;
+  color: #ffffff;
+  font-weight: 200;
+  padding: 20px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.actionLink {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: $oj-yellow;
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 30px;
+  padding: 15px 80px;
+  border: 1px solid $oj-yellow;
+}
+
+.actionLink:hover {
+  color: $oj-yellow;
+  opacity: 1;
+  background-color: rgba(255,255,255,0.1);
 }

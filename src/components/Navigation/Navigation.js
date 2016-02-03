@@ -22,12 +22,18 @@ class Navigation extends Component {
   render() {
     return (
       <div className={cx(s.root, this.props.className)} role="navigation">
-        <Link className={s.link} to="/about">About</Link>
-        <Link className={s.link} to="/contact">Contact</Link>
-        <span className={s.spacer}> | </span>
-        <Link className={s.link} to="/login">Log in</Link>
-        <span className={s.spacer}>or</span>
-        <Link className={cx(s.link, s.highlight)} to="/register">Sign up</Link>
+        <a className={s.logo} href="/" onClick={Link.handleClick}>Oddjob</a>
+
+        <ul className={s.linkGroup}>
+          <li><a className={s.link} href="#cocktails">Cocktails</a></li>
+          <li><a className={s.link} href="#events">Events</a></li>
+          <li><a className={s.link} href="#contact">Contact</a></li>
+        </ul>
+
+        <div className={s.infoGroup}>
+          <a className={s.address} href="https://goo.gl/maps/U2A6AH3YpKx" target="_blank">1337 Mission St, San Francisco, CA</a>
+          <span className={s.openNotice}><strong>Open Now</strong> until 2am</span>
+        </div>
       </div>
     );
   }
