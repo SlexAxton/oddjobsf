@@ -48,6 +48,9 @@ $hero-top-border-color: #c08f60;
   padding: 20px;
   line-height: 1.6;
   letter-spacing: 1px;
+  /* so it breaks nicely on large screens */
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .actionLink {
