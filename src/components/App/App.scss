@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :global {
   @import '../../../node_modules/normalize.css/normalize.css';
   @import '../../../node_modules/react-image-gallery/build/image-gallery.css';
@@ -5,6 +6,147 @@
 }
 
 @import '../variables.scss';
+
+/*
+ * Fonts n Stuff
+ * ========================================================================== */
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_0_0.eot');
+  src: url('//localhost:3000/font/oddjobber_0_0.eot?#iefix') format('embedded-opentype'),
+     url('//localhost:3000/font/oddjobber_0_0.woff') format('woff'),
+     url('//localhost:3000/font/oddjobber_0_0.ttf') format('truetype');
+  font-weight: normal;
+    font-style: normal;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_1_0.eot');
+  src: url('//localhost:3000/font/oddjobber_1_0.eot?#iefix') format('embedded-opentype'),
+     url('//localhost:3000/font/oddjobber_1_0.woff') format('woff'),
+     url('//localhost:3000/font/oddjobber_1_0.ttf') format('truetype');
+  font-weight: 500;
+    font-style: italic;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_1_0.eot');
+  src: url('//localhost:3000/font/oddjobber_1_0.eot?#iefix') format('embedded-opentype'),
+     url('//localhost:3000/font/oddjobber_1_0.woff') format('woff'),
+     url('//localhost:3000/font/oddjobber_1_0.ttf') format('truetype');
+  font-weight: 500;
+    font-style: oblique;
+}
+@font-face {
+  font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_2_0.eot');
+  src: url('//localhost:3000/font/oddjobber_2_0.eot?#iefix') format('embedded-opentype'),
+     url('//localhost:3000/font/oddjobber_2_0.woff') format('woff'),
+     url('//localhost:3000/font/oddjobber_2_0.ttf') format('truetype');
+  font-weight: 900;
+    font-style: normal;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_3_0.eot');
+  src: url('//localhost:3000/font/oddjobber_3_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_3_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_3_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_3_0.eot');
+  src: url('//localhost:3000/font/oddjobber_3_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_3_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_3_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: oblique;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_4_0.eot');
+  src: url('//localhost:3000/font/oddjobber_4_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_4_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_4_0.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_4_0.eot');
+  src: url('//localhost:3000/font/oddjobber_4_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_4_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_4_0.ttf') format('truetype');
+  font-weight: 900;
+  font-style: oblique;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_5_0.eot');
+  src: url('//localhost:3000/font/oddjobber_5_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_5_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_5_0.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_6_0.eot');
+  src: url('//localhost:3000/font/oddjobber_6_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_6_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_6_0.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_7_0.eot');
+  src: url('//localhost:3000/font/oddjobber_7_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_7_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_7_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_7_0.eot');
+  src: url('//localhost:3000/font/oddjobber_7_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_7_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_7_0.ttf') format('truetype');
+  font-weight: normal;
+  font-style: oblique;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_9_0.eot');
+  src: url('//localhost:3000/font/oddjobber_9_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_9_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_9_0.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_9_0.eot');
+  src: url('//localhost:3000/font/oddjobber_9_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_9_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_9_0.ttf') format('truetype');
+  font-weight: 800;
+  font-style: oblique;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_A_0.eot');
+  src: url('//localhost:3000/font/oddjobber_A_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_A_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_A_0.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_A_0.eot');
+  src: url('//localhost:3000/font/oddjobber_A_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_A_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_A_0.ttf') format('truetype');
+  font-weight: 300;
+  font-style: oblique;
+}
+@font-face {font-family: 'Oddjobber';
+  src: url('//localhost:3000/font/oddjobber_B_0.eot');
+  src: url('//localhost:3000/font/oddjobber_B_0.eot?#iefix') format('embedded-opentype'),
+    url('//localhost:3000/font/oddjobber_B_0.woff') format('woff'),
+    url('//localhost:3000/font/oddjobber_B_0.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
 
 /*
  * Base styles
@@ -23,6 +165,7 @@ html,
 body {
   font-size: 1em;
   font-family: $font-family-base;
+  font-weight: $font-family-base-weight;
   line-height: 1.375;
 }
 /*
