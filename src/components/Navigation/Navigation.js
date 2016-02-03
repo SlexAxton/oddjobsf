@@ -1,17 +1,8 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import React, { Component, PropTypes } from 'react';
 import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Navigation.scss';
-import Link from '../Link';
+import Link from '../react-scroll/lib/components/Link';
 
 class Navigation extends Component {
 
@@ -25,7 +16,7 @@ class Navigation extends Component {
         <a className={s.logo} href="/" onClick={Link.handleClick}>Oddjob</a>
 
         <ul className={s.linkGroup}>
-          <li><a className={s.link} href="#cocktails">Cocktails</a></li>
+          <li><Link to="cocktails" href="#cocktails" className={s.link} smooth={true} offset={50} duration={500}>Cocktails</Link></li>
           <li><a className={s.link} href="#events">Events</a></li>
           <li><a className={s.link} href="#contact">Contact</a></li>
         </ul>

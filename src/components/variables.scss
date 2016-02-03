@@ -28,3 +28,10 @@ $screen-xs-min:         480px;  /* Extra small screen / phone */
 $screen-sm-min:         768px;  /* Small screen / tablet */
 $screen-md-min:         992px;  /* Medium screen / desktop */
 $screen-lg-min:         1200px; /* Large screen / wide desktop */
+
+/*
+ * Images
+ * ========================================================================== */
+
+$image-hero-bg: url(http://localhost:3000/img/oj-header-full-3.jpg);
+$image-hero-logo: url(http://localhost:3000/img/oj2.svg);

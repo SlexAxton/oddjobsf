@@ -2,8 +2,25 @@ import React, { Component, PropTypes } from 'react';
 import emptyFunction from 'fbjs/lib/emptyFunction';
 import s from './App.scss';
 import Header from '../Header';
-import Feedback from '../Feedback';
 import Footer from '../Footer';
+import ScrollableElement from '../react-scroll/lib/components/Element';
+
+import ImageGallery from 'react-image-gallery';
+
+const images = [
+  {
+    original: '/img/cocktails/10yearhunter.jpg',
+    thumbnail: '/img/cocktails/10yearhunter.jpg',
+  },
+  {
+    original: '/img/cocktails/coneyislandfakir.jpg',
+    thumbnail: '/img/cocktails/coneyislandfakir.jpg',
+  },
+  {
+    original: '/img/cocktails/fixedflight.jpg',
+    thumbnail: '/img/cocktails/fixedflight.jpg',
+  }
+];
 
 class App extends Component {
 
@@ -47,7 +64,12 @@ class App extends Component {
     return !this.props.error ? (
       <div>
         <Header />
-        {this.props.children}
+        <ImageGallery
+            items={images}
+            autoPlay={true}
+            server={true}
+            slideInterval={8000} />
+        <ScrollableElement name="cocktails">the cocktails</ScrollableElement>
         <Footer />
       </div>
     ) : this.props.children;

@@ -4,7 +4,7 @@ $hero-height: 920px;
 $hero-top-border-color: #c08f60;
 
 .root {
-  background-image: url(/img/oj-header-full-3.jpg);
+  background-image: $image-hero-bg;
   background-size: cover;
   background-position: center center;
   height: $hero-height;
@@ -21,7 +21,7 @@ $hero-top-border-color: #c08f60;
 }
 
 .centerLogo {
-  background-image: url(/img/oj2.svg);
+  background-image: $image-hero-logo;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 250px;
