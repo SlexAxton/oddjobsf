@@ -231,3 +231,44 @@ fieldset {
 textarea {
   resize: vertical;
 }
+
+:global {
+  #content-container {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+
+  #oddjob-gallery {
+    margin: 2rem auto;
+  }
+  .image-gallery {
+    margin: 16px;
+  }
+  .image-gallery-thumbnails {
+    padding-top: 8px;
+  }
+  .image-gallery-thumbnail {
+    padding-right: 8px;
+  }
+  .image-gallery-thumbnail img {
+    width: 160px;
+  }
+  .image-gallery-slide.center::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 1px rgba(255,255,255, 0.4);
+  }
+  .image-gallery-thumbnails {
+    background-color: transparent;
+  }
+  .image-gallery-thumbnail.active img {
+    border-color: $oj-yellow;
+  }
+  .image-gallery-content .image-gallery-left-nav:hover, .image-gallery-content .image-gallery-right-nav:hover {
+    color: $oj-yellow;
+  }
+}

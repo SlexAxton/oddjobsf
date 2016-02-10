@@ -3,23 +3,35 @@ import emptyFunction from 'fbjs/lib/emptyFunction';
 import s from './App.scss';
 import Header from '../Header';
 import Footer from '../Footer';
-import ScrollableElement from '../react-scroll/lib/components/Element';
+import Cocktails from '../Cocktails';
 
 import ImageGallery from 'react-image-gallery';
 
 const images = [
   {
-    original: '/img/cocktails/10yearhunter.jpg',
-    thumbnail: '/img/cocktails/10yearhunter.jpg',
+    original: '/img/gallery/gallery_0.jpg',
+    thumbnail: '/img/gallery/thumbs/gallery_0.jpg',
   },
   {
-    original: '/img/cocktails/coneyislandfakir.jpg',
-    thumbnail: '/img/cocktails/coneyislandfakir.jpg',
+    original: '/img/gallery/gallery_1.jpg',
+    thumbnail: '/img/gallery/thumbs/gallery_1.jpg',
   },
   {
-    original: '/img/cocktails/fixedflight.jpg',
-    thumbnail: '/img/cocktails/fixedflight.jpg',
-  }
+    original: '/img/gallery/gallery_2.jpg',
+    thumbnail: '/img/gallery/thumbs/gallery_2.jpg',
+  },
+  {
+    original: '/img/gallery/gallery_3.jpg',
+    thumbnail: '/img/gallery/thumbs/gallery_3.jpg',
+  },
+  {
+    original: '/img/gallery/gallery_4.jpg',
+    thumbnail: '/img/gallery/thumbs/gallery_4.jpg',
+  },
+  {
+    original: '/img/gallery/gallery_5.jpg',
+    thumbnail: '/img/gallery/thumbs/gallery_5.jpg',
+  },
 ];
 
 class App extends Component {
@@ -64,12 +76,16 @@ class App extends Component {
     return !this.props.error ? (
       <div>
         <Header />
-        <ImageGallery
-            items={images}
-            autoPlay={true}
-            server={true}
-            slideInterval={8000} />
-        <ScrollableElement name="cocktails">the cocktails</ScrollableElement>
+        <div id="content-container">
+          <Cocktails />
+          <div id="oddjob-gallery">
+            <ImageGallery
+                items={images}
+                autoPlay={true}
+                server={true}
+                slideInterval={8000} />
+          </div>
+        </div>
         <Footer />
       </div>
     ) : this.props.children;
