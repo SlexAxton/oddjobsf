@@ -1,9 +1,21 @@
 @import '../variables.scss';
 
-.root {}
+.root {
+  color: white;
+}
 
-.topLevel {}
-.topLevelTitle {}
+.topLevel,
+.topLevelGroup {
+  height: 50px;
+  overflow: hidden;
+}
+
+.topLevelTitle,
+.topLevelGroupTitle {}
+
+.topLevelGroup .topLevel {}
+.topLevelGroup .topLevelTitle {}
+
 .topLevelItems {}
 .topLevelItem {}
 .topLevelItemName {}

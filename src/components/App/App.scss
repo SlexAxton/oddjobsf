@@ -253,6 +253,9 @@ textarea {
   .image-gallery-thumbnail img {
     width: 160px;
   }
+  .image-gallery-thumbnail img {
+    border: 1px solid rgba(255,255,255, 0.2);
+  }
   .image-gallery-slide.center::after {
     content: "";
     position: absolute;

@@ -14,7 +14,7 @@ class Header extends Component {
           <div className={s.centerLogo}></div>
           <div className={s.description}>A cocktail-oriented bar focusing on thoughtfully crafted
             libations that pay homage to classic methods and style.</div>
-          <Link to="cocktails" href="#cocktails" className={s.actionLink} smooth={true} offset={50} duration={500}>View the selection</Link>
+          <Link to="drinkmenu" href="#drinkmenu" className={s.actionLink} smooth={true} offset={50} duration={500}>View the selection</Link>
         </div>
         <div className={s.overlay}></div>
       </div>
