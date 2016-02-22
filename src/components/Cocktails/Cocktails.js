@@ -41,7 +41,7 @@ class Cocktails extends Component {
     });
 
     return (
-      <ScrollableElement className={s.listContainer} name="cocktails">
+      <ScrollableElement className={cx(s.root, this.props.className)} name="cocktails">
         <ul className={s.list}>
           {cocktails}
         </ul>

@@ -1,0 +1,6 @@
+{
+  "name": "DrinkMenu",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./DrinkMenu.js"
+}

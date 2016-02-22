@@ -4,6 +4,7 @@ import s from './App.scss';
 import Header from '../Header';
 import Footer from '../Footer';
 import Cocktails from '../Cocktails';
+import DrinkMenu from '../DrinkMenu';
 
 import ImageGallery from 'react-image-gallery';
 
@@ -78,6 +79,7 @@ class App extends Component {
         <Header />
         <div id="content-container">
           <Cocktails />
+          <DrinkMenu />
           <div id="oddjob-gallery">
             <ImageGallery
                 items={images}
